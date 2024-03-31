@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <body>
+    
+    <title> {{myname}} Projects </title>
+    {% include 'bootstrap.html' %}
+  </head>
+<body>p
+  <div class="container">
+  <h1 class="text-center"> {{myname}} Projects </h1> 
+  {% include 'banner.html'%}
+  <h2 class="text-center"> About me </h2>
+  <p> Hi, I'm Jory, an AI practitioner at Accenture. I'm passionate about using AI to solve real-world problems and make a positive impact. I'm particularly skilled in Python programming, and I've used it to develop a number of successful AI projects.
+</p>
+    
+<h2 class="text-center mt-2 mb-4"> Projects </h2>
+<div> 
+  {% for item in myskills %}
+  {% include 'myProjects.html' %}
+    {% endfor %}
+</div>
+<div class="text-center">
+  <a href="/contactme" type="button" class="btn btn-primary">Contact Me</a>
+<p> copy right , {{myname}} <p>
+  </div>
+</body>
+</html>
